@@ -1,0 +1,91 @@
+<html lang="en" dir="ltr">
+  <head>
+    <title></title>
+    <script src="d3.js"></script>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Kanit');
+    body{
+      background-color:#9b726e;
+      font-family: 'Kanit', sans-serif;
+    }
+    div.p{
+      border:#e6b7c1 2px solid;
+      background-color:rgba(236, 176, 184,.7);
+      padding:10px;
+      border-radius:30px;
+    }
+    </style>
+  <body>
+    <h1>Dataset for Force Layout</h1>
+    <div id="force1">
+      <div class="p">
+      <p>var dataset={<br>
+        nodes:[<br>
+          {href:"true.jpeg"},{href:"true-1.jpeg"},{href:"true-2.jpeg"},<br>
+          {href:"true-3.jpeg"},{href:"true-4.jpeg"},{href:"true-5.jpeg"},<br>
+          {href:"true-6.jpeg"},{href:"true-7.jpeg"},{href:"true-8.jpeg"},<br>
+          {href:"true-9.jpeg"},{href:"true-10.jpeg"},{href:"true-11.jpeg"}<br>
+        ],<br>
+        edges:[
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+        {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)}]<br>
+      }</p>
+      <p>This is my first dataset for force layout, each node is a picture,links are generated randomly</p>
+      </div>
+      </div>
+    <div id="force2">
+      <div class="p">
+      <p>var data={<br>
+        nodes:[<br>
+          {size:Math.random()*15},{size:Math.random()*15},{size:Math.random()*15},<br>
+          {size:Math.random()*15},{size:Math.random()*15},{size:Math.random()*15},<br>
+          {size:Math.random()*15},{size:Math.random()*15},{size:Math.random()*15},<br>
+          {size:Math.random()*15},{size:Math.random()*15}<br>
+        ],<br>
+        edges:[
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+          {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)}
+        ]<br>
+      }</p>
+      <p>This is my second dataset for force layout, the sizes of each node and the links are generated randomly</p>
+      </div>
+      </div>
+      <div id="force3">
+        <div class="p">
+        <p>var d={<br>
+          nodes:[<br>
+            {name:"Liam"},{name:"Isabella"},{name:"Mason"},<br>
+            {name:"Harper"},{name:"Evelyn"},{name:"Abigail"},<br>
+            {name:"Ethan"},{name:"Aiden"},{name:"Scarlett"},<br>
+            {name:"Scarlett"},{name:"Scarlett"}<br>
+          ],<br>
+          edges:[<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},{source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)},<br>
+            {source:Math.round(Math.random()*10),target:Math.round(Math.random()*10)}<br>
+          ]<br>
+        }</p>
+        <p>This is my third dataset for force layout, the nodes are texts of names, and links are also generated randomly</p>
+        </div>
+        </div>
+  </body>
+  <script src="force.js" charset="utf-8"></script>
+</html>
