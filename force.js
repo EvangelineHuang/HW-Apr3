@@ -6,10 +6,10 @@ var svg=d3.select("#force1")
   .attr("height",h);
 var dataset={
   nodes:[
-    {href:"https://github.com/EvangelineHuang/HW-Apr3/true.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-1.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-2.jpeg"},
-    {href:"https://github.com/EvangelineHuang/HW-Apr3/true-3.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-4.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-5.jpeg"},
-    {href:"https://github.com/EvangelineHuang/HW-Apr3/true-6.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-7.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-8.jpeg"},
-    {href:"https://github.com/EvangelineHuang/HW-Apr3/true-9.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-10.jpeg"},{href:"https://github.com/EvangelineHuang/HW-Apr3/true-11.jpeg"}
+    {href:"true.jpeg"},{href:"true-1.jpeg"},{href:"true-2.jpeg"},
+    {href:"true-3.jpeg"},{href:"true-4.jpeg"},{href:"true-5.jpeg"},
+    {href:"true-6.jpeg"},{href:"true-7.jpeg"},{href:"true-8.jpeg"},
+    {href:"true-9.jpeg"},{href:"true-10.jpeg"},{href:"true-11.jpeg"}
 
   ],
   edges:[
